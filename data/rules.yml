@@ -1,0 +1,71 @@
+version: "3.1"
+
+rules:
+
+
+- rule: Decir hola
+  steps:
+  - intent: saludar
+  - action: utter_saludar
+  - action: utter_ayudar
+
+  
+- rule: Despedirse cuando el usuario se despide
+  steps:
+  - intent: despedida
+  - action: utter_despedida
+
+- rule: Responder cuando el usuario dice gracias
+  steps:
+  - intent: agradecimiento
+  - action: utter_denada
+
+- rule: Decir que es un robot cuando el usuario pregunta
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: consulta desconocida
+  steps:
+  - intent: out_of_scope
+  - action: utter_out_of_scope
+
+- rule: respond to FAQS
+  steps:
+  - intent: faq
+  - action: utter_faq
+  - action: utter_te_ayude
+
+- rule: feedback positivo
+  steps:
+  - action: utter_te_ayude
+  - intent: afirmar
+  - action: utter_feliz
+  - action: utter_otra_pregunta
+
+- rule: feedback negativo
+  steps:
+  - action: utter_te_ayude
+  - intent: negar
+  - action: utter_triste
+  - action: utter_otra_pregunta
+
+- rule: otra pregunta
+  steps:
+  - action: utter_otra_pregunta
+  - intent: afirmar
+  - action: utter_ayudar
+
+- rule: otra pregunta sin afirmar
+  steps:
+  - action: utter_otra_pregunta
+  - intent: faq
+  - action: utter_faq
+  - action: utter_te_ayude
+
+- rule: sin pregunta
+  steps:
+  - action: utter_otra_pregunta
+  - intent: negar
+  - action: utter_despedida
+  

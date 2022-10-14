@@ -1,0 +1,20 @@
+{
+  "utter_faq/kickoff": [
+    {
+      "text": "Kickoff es una plataforma donde podrás visualizar e inscribirte a eventos exclusivos."
+    },
+    {
+      "text": "Kickoff posibilita que descubras eventos deportivos a tu alrededor de forma fácil y rápida."
+    }
+  ],
+  "utter_faq/registro": [
+    {
+      "text": "Para inscribirte a los eventos es necesario que crees un usuario. ¡Sólamente tenés que completar un simple formulario! Y podrás disfrutar de todos los beneficios de KickOff."
+    }
+  ],
+  "utter_faq/organizar": [
+    {
+      "text": "Para organizar eventos es necesario que cuentes con un club o cancha. Una vez que completes el formulario de registro de empresa serás contactado a la brevedad."
+    }
+  ]
+}

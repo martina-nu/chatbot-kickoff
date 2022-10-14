@@ -1,0 +1,74 @@
+version: "3.1"
+
+intents:
+  - faq:
+      is_retrieval_intent: true 
+
+  - out_of_scope
+  - saludar
+  - despedida
+  - afirmar
+  - negar
+  - agradecimiento 
+  - bot_challenge
+ 
+responses:
+
+  utter_out_of_scope:
+  - text: Disculpas, no me entrenaron para responder eso 🤔.
+
+  utter_saludar:
+  - text: "¡Hola! ¿Todo bien? 😃 Soy el bot de KickOff."
+  - text: "¡Hola! ¿Como estas? 😃 Soy el bot de Kickoff. "
+
+  utter_ayudar:
+  - text: "¿Cómo te puedo ayudar?"
+  - text: "Estoy acá para responder tus preguntas"
+  - text: "¿En qué te puedo ayudar?"
+  - text: "¿Cuál es tu duda?"
+
+  utter_te_ayude:
+  - text: "¿Te ayudé? 🙂"
+  - text: "¿Resolví tu duda? 🙂"
+  - text: "¿Fui de ayuda? 🙂"
+
+  utter_feliz:
+  - text: "¡Buenísimo!  😊 "
+  - text: "¡Genial!  😊 "
+  - text: "¡Perfecto!  😊 "
+
+
+  utter_denada:
+  - text: "¡De nada!✨"
+  - text: "¡Estoy acá para ayudarte!✨"
+ 
+  utter_triste:
+  - text: "Disculpas. Todavía estoy aprendiendo 😔"
+ 
+  utter_despedida:
+  - text: "¡Chau! 👋"
+  - text: "¡Saludos! 👋"
+  - text: "¡Nos vemos! 👋"
+
+  utter_otra_pregunta:
+  - text: "¿Te puedo ayudar en algo más?"
+  - text: "¿Tenés otra duda?"
+
+  utter_faq/kickoff:
+  - text: "Kickoff es una plataforma donde podrás visualizar e inscribirte a eventos exclusivos."
+  - text: "Kickoff posibilita que descubras eventos deportivos a tu alrededor de forma fácil y rápida."
+
+  utter_iamabot:
+  - text: "Soy un bot, me programaron para resolver tus dudas 🦾"
+  - text: "No soy humano, pero estoy acá para ayudarte! 🤖"
+  - text: "Soy un bot. Uso inteligencia artificial para responderte 🤖"
+
+  utter_faq/registro:
+  - text: "Para inscribirte a los eventos es necesario que crees un usuario. ¡Sólamente tenés que completar un simple formulario! Y podrás disfrutar de todos los beneficios de KickOff."
+  
+  utter_faq/organizar:
+  - text: "Para organizar eventos es necesario que cuentes con un club o cancha. Una vez que completes el formulario de registro de empresa serás contactado a la brevedad."
+
+session_config:
+  session_expiration_time: 5
+  carry_over_slots_to_new_session: false

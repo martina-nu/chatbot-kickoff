@@ -1,0 +1,108 @@
+version: "3.1"
+
+nlu:
+- intent: out_of_scope
+  examples: |
+    - Quien es el presidente
+    - Cuanto es 2 + 2
+    - Cómo está el clima hoy
+    - Qué día es mañana
+    
+
+- intent: saludar
+  examples: |
+    - hola!
+    - holi
+    - hey
+    - todo bien?
+    - como estas?
+    - como andas?
+    - hola
+    - buen día
+    - buenas tardes
+    - buenas
+    - buenas noches
+    - buenos días
+
+- intent: despedida
+  examples: |
+    - chau
+    - nos vemos
+    - adiós
+    - chau chau
+    - que pases bien
+
+
+- intent: afirmar
+  examples: |
+    - si!
+    - si
+    - sí!
+    - sí
+    - siii
+    - claro
+    - correcto
+    - por supuesto
+    - así es 
+    - sip
+    - ok
+
+- intent: negar
+  examples: |
+    - no
+    - n
+    - nunca
+    - no creo
+    - de ninguna forma
+    - nop
+
+  
+- intent: agradecimiento
+  examples: |
+    - gracias!
+    - gracias
+    - muchas gracias
+    - mil gracias
+    - gracias totales
+    - muchas gracias!
+    - te agradezco
+   
+- intent: bot_challenge
+  examples: |
+    - sos un robot?
+    - sos un humano?
+    - eres un robot?
+    - eres un humano?
+    - estoy hablando con un robot?
+    - estoy hablando con un humano?
+  
+- intent: faq/kickoff
+  examples: |
+    - que es kickoff?
+    - que sería Kickoff?
+    - que puedo hacer con kickoff?
+    - para qué sirve kickoff?
+    
+- intent: faq/registro
+  examples: |
+    - como puedo registrarme?
+    - que tengo que hacer para registrarme?
+    - es necesario registrarme en la página?
+    - tengo que crear un usuario?
+    - como creo un usuario?
+    - registro en app
+    - registro en aplicación
+    - registro en kickoff
+    
+- intent: faq/organizar
+  examples: |
+    - como puedo organizar eventos?
+    - quiero organizar eventos?
+    - que tengo que hacer para organizar eventos?
+    - quiero registrarme como empresa
+    - quiero trabajar con kickoff
+    - que tengo que hacer para trabajar con kickoff?
+    
+
+
+
