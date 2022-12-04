@@ -2,6 +2,11 @@ version: "3.1"
 
 rules:
 
+- rule: rephrase when low NLU confidence
+  steps:
+  - intent: nlu_fallback
+  - action: utter_please_rephrase
+
 
 - rule: Decir hola
   steps:
@@ -24,17 +29,32 @@ rules:
   steps:
   - intent: bot_challenge
   - action: utter_iamabot
+  - action: utter_otra_pregunta
+
+- rule: Hablar sobre origen
+  steps:
+  - intent: origen_bot
+  - action: utter_origen_bot
+  - action: utter_otra_pregunta
 
 - rule: consulta desconocida
   steps:
   - intent: out_of_scope
   - action: utter_out_of_scope
+  - action: utter_otra_pregunta
 
 - rule: respond to FAQS
   steps:
   - intent: faq
   - action: utter_faq
   - action: utter_te_ayude
+
+- rule: respond to FAQS2
+  steps:
+  - intent: faq2
+  - action: utter_faq2
+  - action: utter_te_ayude
+
 
 - rule: feedback positivo
   steps:
@@ -56,16 +76,9 @@ rules:
   - intent: afirmar
   - action: utter_ayudar
 
-- rule: otra pregunta sin afirmar
-  steps:
-  - action: utter_otra_pregunta
-  - intent: faq
-  - action: utter_faq
-  - action: utter_te_ayude
 
 - rule: sin pregunta
   steps:
   - action: utter_otra_pregunta
   - intent: negar
-  - action: utter_despedida
-  
+  - action: utter_denada

@@ -2,8 +2,9 @@ version: "3.1"
 
 intents:
   - faq:
-      is_retrieval_intent: true 
-
+      is_retrieval_intent: true
+  - faq2:
+      is_retrieval_intent: true
   - out_of_scope
   - saludar
   - despedida
@@ -11,21 +12,29 @@ intents:
   - negar
   - agradecimiento 
   - bot_challenge
+  - origen_bot
  
 responses:
 
+  utter_default:
+  - text: No entendí 🤔 Disculpas, todavía estoy aprendiendo 😔.
+
+  utter_please_rephrase:
+  - text: Disculpas, no entendí. ¿Podrías escribirlo de otra forma? 🤔
+
   utter_out_of_scope:
   - text: Disculpas, no me entrenaron para responder eso 🤔.
+  - text: Disculpas, todavía no te puedo ayudar con eso 🤔.
 
   utter_saludar:
-  - text: "¡Hola! ¿Todo bien? 😃 Soy el bot de KickOff."
-  - text: "¡Hola! ¿Como estas? 😃 Soy el bot de Kickoff. "
+  - text: "¡Hola! 😃 Soy el bot de KickOff."
+  - text: "¡Hola! 😃 Soy el bot de Kickoff. "
 
   utter_ayudar:
-  - text: "¿Cómo te puedo ayudar?"
-  - text: "Estoy acá para responder tus preguntas"
-  - text: "¿En qué te puedo ayudar?"
-  - text: "¿Cuál es tu duda?"
+  - text: "¿Cómo te puedo ayudar? 🙂"
+  - text: "Estoy acá para responder tus preguntas 🙂"
+  - text: "¿En qué te puedo ayudar? 🙂"
+  - text: "¿Cuál es tu duda? 🙂"
 
   utter_te_ayude:
   - text: "¿Te ayudé? 🙂"
@@ -39,7 +48,6 @@ responses:
 
 
   utter_denada:
-  - text: "¡De nada!✨"
   - text: "¡Estoy acá para ayudarte!✨"
  
   utter_triste:
@@ -54,7 +62,7 @@ responses:
   - text: "¿Te puedo ayudar en algo más?"
   - text: "¿Tenés otra duda?"
 
-  utter_faq/kickoff:
+  utter_faq/ask_kickoff:
   - text: "Kickoff es una plataforma donde podrás visualizar e inscribirte a eventos exclusivos."
   - text: "Kickoff posibilita que descubras eventos deportivos a tu alrededor de forma fácil y rápida."
 
@@ -63,11 +71,29 @@ responses:
   - text: "No soy humano, pero estoy acá para ayudarte! 🤖"
   - text: "Soy un bot. Uso inteligencia artificial para responderte 🤖"
 
-  utter_faq/registro:
-  - text: "Para inscribirte a los eventos es necesario que crees un usuario. ¡Sólamente tenés que completar un simple formulario! Y podrás disfrutar de todos los beneficios de KickOff."
+  utter_origen_bot:
+  - text: "Soy un bot. Fui creado en Uruguay en el año 2022 por el equipo Sinergia como parte de su proyecto final de titulación de la Licenciatura en Tecnologías de la Información 🤖"
+
+  utter_faq/ask_registro:
+  - text: "Para inscribirte a los eventos es necesario que crees un usuario. ¡Solamente tenés que completar un simple formulario! Y podrás disfrutar de todos los beneficios de KickOff."
   
-  utter_faq/organizar:
+  utter_faq/ask_organizar:
   - text: "Para organizar eventos es necesario que cuentes con un club o cancha. Una vez que completes el formulario de registro de empresa serás contactado a la brevedad."
+
+  utter_faq/ask_pago:
+  - text: "Utilizamos Mercado Pago para que puedas pagar de forma rápida y segura."
+
+  utter_faq2/ask_inscripcion:
+  - text: "Para inscribirte deberás ingresar al detalle del evento donde encontrarás el botón con el texto 'Quiero inscribirme'"
+
+  utter_faq2/ask_borrar_inscripcion:
+  - text: "Para cancelar una inscripción es necesario que te contactes con nuestro correo de Servicio al Cliente (proyectockickoff@gmail.com). Se debe solicitar por lo menos con 5 días de antelación con respecto a la fecha del evento y no deben haber pasado más de 15 días de efectuada la inscripción"
+
+  utter_faq2/ask_eventos:
+  - text: "Con KickOff descubrir eventos es muy fácil! Ajustá la búsqueda para encontrar los que más se adapten a tus preferencias y visualizalos en un mapa."
+
+  utter_faq2/ask_beneficios:
+  - text: "Kickoff es una plataforma que conecta a instituciones deportivas con personas que desean practicar deportes de forma sencilla y rápida. Nuestra misión es facilitar el acceso a eventos deportivos, ayudando a promover el deporte en la sociedad Uruguaya."
 
 session_config:
   session_expiration_time: 5

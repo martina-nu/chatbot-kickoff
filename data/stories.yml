@@ -2,67 +2,95 @@ version: "3.1"
 
 stories:
 
-
-
-
-# # - story: respond to faq
-# #   steps:
-# #   - intent: faq
-# #   - action: utter_faq
-# #   - checkpoint: feedback
-
-
-# # - story: consulta desonocida
-# #   steps:
-# #   - intent: out_of_scope
-# #   - action: utter_out_of_scope
-# #   - checkpoint: pregunta
-  
-# # - story: feedback positivo
-# #   steps:
-# #   - checkpoint: feedback
-# #   - action: utter_te_ayude
-# #   - intent: afirmar
-# #   - action: utter_feliz
-# #   - checkpoint: pregunta
-
-# # - story: feedback negativo
-# #   steps:
-# #   - checkpoint: feedback
-# #   - action: utter_te_ayude
-# #   - intent: negar
-# #   - action: utter_triste
-# #   - checkpoint: pregunta
-
-
-
-# - story: más preguntas
+# - story: faq 1 negative feedback and another question
 #   steps:
-#   - checkpoint: pregunta
-#   - action: utter_otra_pregunta
-#   - intent: afirmar
-#   - action: utter_ayudar
-  
-# - story: otra_pregunta
-#   steps:
-#   - checkpoint: pregunta
-#   - action: utter_otra_pregunta
 #   - intent: faq
 #   - action: utter_faq
 #   - action: utter_te_ayude
-  
+#   - intent: negar
+#   - action: utter_triste
+#   - action: utter_otra_pregunta
+#   - intent: afirmar
+#   - action: utter_ayudar
 
-# - story: sin pregunta
+# - story: faq 1 positive feedback and another question
 #   steps:
-#   - checkpoint: pregunta
+#   - intent: faq
+#   - action: utter_faq
+#   - action: utter_te_ayude
+#   - intent: afirmar
+#   - action: utter_feliz
+#   - action: utter_otra_pregunta
+#   - intent: afirmar
+#   - action: utter_ayudar
+
+# - story: faq 1 negative feedback and no question
+#   steps:
+#   - intent: faq
+#   - action: utter_faq
+#   - action: utter_te_ayude
+#   - intent: negar
+#   - action: utter_triste
 #   - action: utter_otra_pregunta
 #   - intent: negar
-#   - action: utter_despedida
-  
+#   - action: utter_denada
 
 
-  
+# - story: faq 1 positive feedback and no question
+#   steps:
+#   - intent: faq
+#   - action: utter_faq
+#   - action: utter_te_ayude
+#   - intent: afirmar
+#   - action: utter_feliz
+#   - action: utter_otra_pregunta
+#   - intent: negar
+#   - action: utter_denada
 
-  
 
- 
+
+
+# - story: faq 2 negative feedback and another question
+#   steps:
+#   - intent: faq2
+#   - action: utter_faq2
+#   - action: utter_te_ayude
+#   - intent: negar
+#   - action: utter_triste
+#   - action: utter_otra_pregunta
+#   - intent: afirmar
+#   - action: utter_ayudar
+
+# - story: faq 2 positive feedback and another question
+#   steps:
+#   - intent: faq2
+#   - action: utter_faq2
+#   - action: utter_te_ayude
+#   - intent: afirmar
+#   - action: utter_feliz
+#   - action: utter_otra_pregunta
+#   - intent: afirmar
+#   - action: utter_ayudar
+
+# - story: faq 2 negative feedback and no question
+#   steps:
+#   - intent: faq2
+#   - action: utter_faq2
+#   - action: utter_te_ayude
+#   - intent: negar
+#   - action: utter_triste
+#   - action: utter_otra_pregunta
+#   - intent: negar
+#   - action: utter_denada
+
+
+# - story: faq 2 positive feedback and no question
+#   steps:
+#   - intent: faq2
+#   - action: utter_faq2
+#   - action: utter_te_ayude
+#   - intent: afirmar
+#   - action: utter_feliz
+#   - action: utter_otra_pregunta
+#   - intent: negar
+#   - action: utter_denada

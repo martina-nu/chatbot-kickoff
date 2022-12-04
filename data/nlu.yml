@@ -7,7 +7,10 @@ nlu:
     - Cuanto es 2 + 2
     - Cómo está el clima hoy
     - Qué día es mañana
-    
+    - Qué día es hoy
+    - Quién es Mick Jagger
+    - quien es harry styles
+
 
 - intent: saludar
   examples: |
@@ -31,6 +34,8 @@ nlu:
     - adiós
     - chau chau
     - que pases bien
+    - bueno chau
+    - bye
 
 
 - intent: afirmar
@@ -51,6 +56,9 @@ nlu:
   examples: |
     - no
     - n
+    - mas o menos
+    - noooo
+    - creo que no 
     - nunca
     - no creo
     - de ninguna forma
@@ -71,19 +79,25 @@ nlu:
   examples: |
     - sos un robot?
     - sos un humano?
+    - no sos humano
+    - quien sos
+    - quien eres
     - eres un robot?
     - eres un humano?
     - estoy hablando con un robot?
     - estoy hablando con un humano?
-  
-- intent: faq/kickoff
+
+- intent: faq/ask_kickoff
   examples: |
     - que es kickoff?
     - que sería Kickoff?
     - que puedo hacer con kickoff?
     - para qué sirve kickoff?
+    - para que sirve esta app
+    - que puedo hacer con esta página
+
     
-- intent: faq/registro
+- intent: faq/ask_registro
   examples: |
     - como puedo registrarme?
     - que tengo que hacer para registrarme?
@@ -94,14 +108,74 @@ nlu:
     - registro en aplicación
     - registro en kickoff
     
-- intent: faq/organizar
+- intent: faq/ask_organizar
   examples: |
-    - como puedo organizar eventos?
-    - quiero organizar eventos?
-    - que tengo que hacer para organizar eventos?
+    - como puedo organizar
+    - quiero organizar
+    - que tengo que hacer para organizar
     - quiero registrarme como empresa
+    - quiero registrar mi club
     - quiero trabajar con kickoff
     - que tengo que hacer para trabajar con kickoff?
+
+- intent: faq/ask_pago
+  examples: |
+    - como puedo pagar
+    - quiero pagar
+    - que metodos de pago aceptan
+    - metodos de pago
+    - medios de pago
+    - como pago
+    - pagar?
+    - con que tarjetas puedo pagar
+    - que tarjetas aceptan
+
+- intent: faq2/ask_inscripcion
+  examples: |
+    - como me anoto
+    - quiero inscribirme
+    - reservar cupo
+    - como hago para inscribirme
+    - quiero anotarme
+    - como reservo mi lugar
+    - como me inscribo
+
+- intent: faq2/ask_borrar_inscripcion
+  examples: |
+    - como me doy de baja mi inscripción
+    - quiero borrar mi inscripcion
+    - necesito borrar mi inscripción
+    - como hago para cancelar
+    - quiero un reembolso
+    - quiero cancelar mi inscripcion
+    - como cancelo mi inscripcion
+    - como me desinscribo
+    
+- intent: faq2/ask_eventos
+  examples: |
+    - ¿Qué eventos hay hoy?
+    - ¿Qué eventos hay en mi ciudad?
+    - Qué eventos hay hoy en Montevideo?
+    - que eventos hay hoy
+    - en que lugar hay eventos
+    - como busco eventos
+    - que eventos hay mañana
+    - qué eventos hay en mi departamento
+
+- intent: faq2/ask_beneficios
+  examples: |
+    - que beneficios me da kickoff?
+    - cual es la mision de kickoff?
+    - cual es el beneficio de kickoff?
+    - cuáles son los objetivos de kickoff?
+
+- intent: origen_bot
+  examples: |
+    - quien te creó?
+    - cual es tu origen?
+  
+
+
     
 
 
