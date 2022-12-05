@@ -153,14 +153,11 @@ nlu:
     
 - intent: faq2/ask_eventos
   examples: |
-    - ¿Qué eventos hay hoy?
-    - ¿Qué eventos hay en mi ciudad?
-    - Qué eventos hay hoy en Montevideo?
-    - que eventos hay hoy
-    - en que lugar hay eventos
-    - como busco eventos
-    - que eventos hay mañana
-    - qué eventos hay en mi departamento
+    - como busco
+    - como encuentro
+    - aplicar filtros
+    - como puedo buscar
+
 
 - intent: faq2/ask_beneficios
   examples: |
@@ -173,6 +170,7 @@ nlu:
   examples: |
     - quien te creó?
     - cual es tu origen?
+    - origen
   
 
 
